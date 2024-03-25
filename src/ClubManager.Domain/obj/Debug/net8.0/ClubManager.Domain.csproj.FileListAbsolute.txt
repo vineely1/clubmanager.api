@@ -1,0 +1,12 @@
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\bin\Debug\net8.0\ClubManager.Domain.deps.json
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\bin\Debug\net8.0\ClubManager.Domain.dll
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\bin\Debug\net8.0\ClubManager.Domain.pdb
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\ClubManager.Domain.csproj.AssemblyReference.cache
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\ClubManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\ClubManager.Domain.AssemblyInfoInputs.cache
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\ClubManager.Domain.AssemblyInfo.cs
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\ClubManager.Domain.csproj.CoreCompileInputs.cache
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\ClubManager.Domain.dll
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\refint\ClubManager.Domain.dll
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\ClubManager.Domain.pdb
+C:\Code\dotnet\ClubManager\src\ClubManager.Domain\obj\Debug\net8.0\ref\ClubManager.Domain.dll
