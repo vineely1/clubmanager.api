@@ -5,13 +5,13 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4C1A1B0D-31CE-4B4F-91BB-9021085D1A07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubManager.Domain", "src\ClubManager.Domain\ClubManager.Domain.csproj", "{4B50617E-DED5-4D39-9779-E64AB57DDF9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClubManager.Domain", "src\ClubManager.Domain\ClubManager.Domain.csproj", "{4B50617E-DED5-4D39-9779-E64AB57DDF9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubManager.Application", "src\ClubManager.Application\ClubManager.Application.csproj", "{065BEEAE-F9F8-4AAA-991E-5C6DC3413937}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClubManager.Application", "src\ClubManager.Application\ClubManager.Application.csproj", "{065BEEAE-F9F8-4AAA-991E-5C6DC3413937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubManager.Infrastructure", "src\ClubManager.Infrastructure\ClubManager.Infrastructure.csproj", "{51CED54E-61C4-43F1-A6DD-B935BCDAE987}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClubManager.Infrastructure", "src\ClubManager.Infrastructure\ClubManager.Infrastructure.csproj", "{51CED54E-61C4-43F1-A6DD-B935BCDAE987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubManager.Api", "src\ClubManager.Api\ClubManager.Api.csproj", "{F150E8CD-5AEE-48A9-A480-C482AE6C9CB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClubManager.Api", "src\ClubManager.Api\ClubManager.Api.csproj", "{F150E8CD-5AEE-48A9-A480-C482AE6C9CB1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5EFCA68C-C513-4E85-BBF0-537FAE7E4480}"
 EndProject

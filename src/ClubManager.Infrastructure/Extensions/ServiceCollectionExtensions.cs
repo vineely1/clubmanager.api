@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using ClubManager.Domain.Entities;
 using ClubManager.Infrastructure.Persistance;
 using Microsoft.AspNetCore.Identity;
+using ClubManager.Domain.Repositories;
+using ClubManager.Infrastructure.Repository;
 
 namespace ClubManager.Infrastructure.Extensions;
 public static class ServiceCollectionExtensions
@@ -18,9 +20,7 @@ public static class ServiceCollectionExtensions
             .AddRoles<IdentityRole>()
             .AddEntityFrameworkStores<ClubManagerDbContext>();
 
-        services.AddAuthentication().AddBearerToken(options =>
-        {
-            options.BearerTokenExpiration = TimeSpan.FromSeconds(1);
-        });
+        services.AddScoped<IClubRepository, ClubRepository>();
+
     }
 }

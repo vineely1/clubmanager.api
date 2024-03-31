@@ -1,8 +1,9 @@
 
+using ClubManager.Application.Extensions;
 using ClubManager.Domain.Entities;
 using ClubManager.Infrastructure.Extensions;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.OpenApi.Models;
+using ClubManager.Api.Extensions;
+using Serilog;
 
 namespace ClubManager.Api;
 
@@ -14,32 +15,17 @@ public class Program
 
         // Add services to the container.
         builder.Services.AddInfrastructure(builder.Configuration);
+        builder.Services.AddApplication();
+        builder.Services.AddPresentation();
+        builder.Services.Configure<RouteOptions>(options => { options.LowercaseUrls = true; });
 
-        builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-        builder.Services.AddEndpointsApiExplorer();
-
-        builder.Services.AddSwaggerGen(c =>
-        {
-            c.AddSecurityDefinition("bearerAuth", new OpenApiSecurityScheme
-            {
-                Type = SecuritySchemeType.Http,
-                Scheme = "Bearer"
-            });
-
-            c.AddSecurityRequirement(new OpenApiSecurityRequirement
-            {
-                {
-                    new OpenApiSecurityScheme
-                    {
-                        Reference = new OpenApiReference { Type =  ReferenceType.SecurityScheme, Id = "bearerAuth"}
-                    },
-                    []
-                }
-            });
-        });
+        builder.Host.UseSerilog((context, configuration) =>
+            configuration.ReadFrom.Configuration(context.Configuration)
+        );
 
         var app = builder.Build();
+
+        app.UseSerilogRequestLogging();
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
